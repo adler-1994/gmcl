@@ -1,0 +1,44 @@
+<?xml version="1.0"?>
+<package format="2">
+    <name>gmcl</name>
+    <version>1.0.0</version>
+    <description>
+        <p>
+            gmcl is probabilistic-based localization filter for mobile robot in 2D-known map
+            which is a proposed replacement to adaptive Monte Carlo localization (amcl) in Robot operating system (ROS).
+            It implements the amcl approach with 3 additional particle filters
+            (optimal particle filter, intelligent particle filter, self adaptive particle filter).          
+        </p>
+    </description>
+
+    <author>Mhd Ali Alshikh Khalil </author>
+    <author>adler1994@gmail.com</author>
+    <maintainer email="adler1994@gmail.com">adler</maintainer>
+    
+    
+  <!-- author of amcl  
+    <author>Brian P. Gerkey</author>
+    <author>contradict@gmail.com</author>
+-->
+    <license>TODO</license>
+    <buildtool_depend>catkin</buildtool_depend>
+
+    <build_depend>message_filters</build_depend>
+    <build_depend>tf2_geometry_msgs</build_depend>
+
+    <depend>diagnostic_updater</depend>
+    <depend>dynamic_reconfigure</depend>
+    <depend>geometry_msgs</depend>
+    <depend>nav_msgs</depend>
+    <depend>rosbag</depend>
+    <depend>roscpp</depend>
+    <depend>sensor_msgs</depend>
+    <depend>std_srvs</depend>
+    <depend>tf2</depend>
+    <depend>tf2_msgs</depend>
+    <depend>tf2_ros</depend>
+
+    <test_depend>map_server</test_depend>
+    <test_depend>rostest</test_depend>
+    <test_depend>python3-pykdl</test_depend>
+</package>
