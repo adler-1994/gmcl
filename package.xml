@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <package format="2">
     <name>gmcl</name>
-    <version>1.0.0</version>
+    <version>0.1.0</version>
     <description>
         <p>
             gmcl is probabilistic-based localization filter for mobile robot in 2D-known map
