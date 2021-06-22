@@ -2,7 +2,7 @@
 Changelog for package gmcl
 ^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-1.1.0 (2021-06-20)
+0.1.0 (2021-06-20)
 -------------------
 * GMCL package has been created............ 
 
