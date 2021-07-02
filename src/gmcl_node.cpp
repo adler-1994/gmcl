@@ -390,6 +390,10 @@ GmclNode::GmclNode() :
   
   private_nh_.param("energy_map_resolution_x", resolution_x_, 0.2);
   private_nh_.param("energy_map_resolution_y", resolution_y_, 0.2);
+  if( !resolution_x_ || !resolution_y_)
+     { ROS_ERROR("don't set either of energy map resolutions to zero"); 
+       ros::shutdown();
+     }
   private_nh_.param("energy_threshold_value", threshold_val_, 0.05);
   private_nh_.param("publish_ser", pub_energy_map_, false);
   
@@ -565,6 +569,10 @@ void GmclNode::reconfigureCB(gmcl::GMCLConfig &config, uint32_t level)
 
   resolution_x_ = config.energy_map_resolution_x;
   resolution_y_ = config.energy_map_resolution_y;
+  if( !resolution_x_ || !resolution_y_)
+     { ROS_ERROR("don't set either of energy map resolutions to zero"); 
+       ros::shutdown();
+     }
   threshold_val_ = config.energy_threshold_value;
   pub_energy_map_ = config.publish_ser;
   
@@ -963,7 +971,6 @@ GmclNode::handleMapMessage(const nav_msgs::OccupancyGrid& msg)
   map_ = convertMap(msg);
   if(pf_model_.use_self_adaptive)
    {
-
   energy_map_ = energy_map_alloc(map_ ,resolution_x_ ,resolution_y_ , 
                                                max_beams_,laser_min_range_,laser_max_range_); 
 
