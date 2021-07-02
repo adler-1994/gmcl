@@ -2,6 +2,11 @@
 Changelog for package gmcl
 ^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+0.1.1 (2021-07-02)
+-------------------
+* avoid dividing by zero when setting either of energy map resolutions to zero.
+* change message names to be more appropriate.
+
 0.1.0 (2021-06-20)
 -------------------
 * GMCL package has been created............ 
