@@ -11,7 +11,7 @@
          (Optimal particle filter, Intelligent particle filter, Self-adaptive particle filter)                       
         </p>
         <p>
-         Main node structure and amcl’s code was derived, with thanks, from Brian Gerkey's amcl package.     
+         Main node structure and amcl-algorithms’s code was derived, with thanks, from Brian Gerkey's amcl package.     
         </p>
     </description>
 
