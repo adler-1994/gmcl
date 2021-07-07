@@ -4,10 +4,10 @@
     <version>1.0.1</version>
     <description>
         <p>
-         gmcl,which stands for general monte carlo localization,
-         is probabilistic-based localization technique for mobile robot in
-         2D-known map which is a proposed replacement to amcl in ROS. It implements 
-         the amcl approach with 3 additional particle filters
+         gmcl, which stands for general monte carlo localization,
+         is a probabilistic-based localization technique for mobile robot in
+         2D-known map. It implements the adaptive monte carlo localization
+         - amcl - approach with 3 additional particle filters
          (Optimal particle filter, Intelligent particle filter, Self-adaptive particle filter)                       
         </p>
         <p>
