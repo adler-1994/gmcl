@@ -7,7 +7,7 @@
          gmcl, which stands for general monte carlo localization,
          is a probabilistic-based localization technique for mobile robots in
          2D-known map. It integrates the adaptive monte carlo localization
-         - amcl - approach with 3 particle filter algorithms (Optimal, Intelligent,
+         - amcl - approach with three different particle filter algorithms (Optimal, Intelligent,
          Self-adaptive) to improve the performance of amcl while working in real time.                       
         </p>
         <p>
