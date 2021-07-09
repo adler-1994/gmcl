@@ -8,7 +8,7 @@
          is a probabilistic-based localization technique for mobile robots in
          2D-known map. It integrates the adaptive monte carlo localization
          - amcl - approach with three different particle filter algorithms (Optimal, Intelligent,
-         Self-adaptive) to improve the performance of amcl while working in real time.                       
+         Self-adaptive) to improve the performance while working in real time.                       
         </p>
         <p>
          Main node structure and amcl-algorithms’s code was derived, with thanks, from Brian Gerkey's amcl package.     
